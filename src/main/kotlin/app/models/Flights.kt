@@ -17,16 +17,9 @@ data class Flights(
     val gate: Int,
     val group: Int,
     val seat: String,
+    val passenger: String,
     val status: flightStatus = flightStatus.SCHEDULED
 
 
 )
 
-@Serializable
-enum class flightStatus {
-    SCHEDULED,
-    BOARDING,
-    IN_FLIGHT,
-    COMPLETED,
-    CANCELLED
-}

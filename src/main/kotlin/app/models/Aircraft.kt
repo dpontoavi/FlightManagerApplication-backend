@@ -11,14 +11,3 @@ data class Aircraft(
     val paxCapacity: Int
     )
 
-@Serializable
-enum class Manufacturer {
-    AIRBUS,
-    BOEING,
-    EMBRAER,
-    CESSNA,
-    CIRRUS,
-    BOMBARDIER,
-    ATR,
-    COMAC
-}

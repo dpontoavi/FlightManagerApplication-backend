@@ -1,9 +1,11 @@
 package com.dpontoavi.app.plugins
 
+
+import app.repository.FlightRepositoryImplemenation
+import app.routes.flightRoutes
+import app.services.FlightService
 import io.ktor.http.*
 import io.ktor.server.application.*
-import io.ktor.server.plugins.requestvalidation.RequestValidation
-import io.ktor.server.plugins.requestvalidation.ValidationResult
 import io.ktor.server.plugins.statuspages.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -14,16 +16,13 @@ fun Application.configureRouting() {
             call.respondText(text = "500: $cause" , status = HttpStatusCode.InternalServerError)
         }
     }
-    install(RequestValidation) {
-        validate<String> { bodyText ->
-            if (!bodyText.startsWith("Hello"))
-                ValidationResult.Invalid("Body text should start with 'Hello'")
-            else ValidationResult.Valid
-        }
-    }
+
+    val flightRepository = FlightRepositoryImplemenation()
+    val flightService = FlightService(flightRepository)
+
     routing {
-        get("/") {
-            call.respondText("Hello World!")
+        get("/api/v1/flights") {
+            call.respond(flightRoutes(flightService))
         }
     }
 }
