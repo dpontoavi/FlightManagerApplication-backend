@@ -1,49 +1,48 @@
-# flightstudy
+# Flight Management Web Application using Kotlin Backend and React
 
-This project was created using the [Ktor Project Generator](https://start.ktor.io).
+If you are a Flight Sim player and need a step more to realism here is Flight Management Web Application: A solution
+for taking your airline simulation to a next level
 
-Here are some useful links to get you started:
+### Sumary
 
-- [Ktor Documentation](https://ktor.io/docs/home.html)
-- [Ktor GitHub page](https://github.com/ktorio/ktor)
-- The [Ktor Slack chat](https://app.slack.com/client/T09229ZC6/C0A974TJ9). You'll need to [request an invite](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up) to join.
+- [Features](#features)
+- [How to download](#download)
+- How to use the Application
+- Screenshots
+- How to make your customizations
+- [Concerns !!MUST READ!!](#concerns)
 
-## Features
+## Story behind this project
 
-Here's a list of features included in this project:
+I started this project as an aid to my studies session using flight simulation as timer, I was surprised on how
+flying would help me study, even when I'm at the cockpit actively flying the plane.</p>
+So, in my free time I worked on a system that could let me plan my sessions just like a real airline plans flights.
+I soon noticed that this could be more than just a study gimmick, that's why we are here now, feel free to use as you like.
 
-| Name                                                                   | Description                                                                        |
-| ------------------------------------------------------------------------|------------------------------------------------------------------------------------ |
-| [Call Logging](https://start.ktor.io/p/call-logging)                   | Logs client requests                                                               |
-| [Routing](https://start.ktor.io/p/routing)                             | Provides a structured routing DSL                                                  |
-| [Status Pages](https://start.ktor.io/p/status-pages)                   | Provides exception handling for routes                                             |
-| [kotlinx.serialization](https://start.ktor.io/p/kotlinx-serialization) | Handles JSON serialization using kotlinx.serialization library                     |
-| [Content Negotiation](https://start.ktor.io/p/content-negotiation)     | Provides automatic content conversion according to Content-Type and Accept headers |
-| [Exposed](https://start.ktor.io/p/exposed)                             | Adds Exposed database to your application                                          |
-| [Request Validation](https://start.ktor.io/p/request-validation)       | Adds validation for incoming requests                                              |
-| [Postgres](https://start.ktor.io/p/postgres)                           | Adds Postgres database to your application                                         |
-| [Authentication](https://start.ktor.io/p/auth)                         | Provides extension point for handling the Authorization header                     |
-| [Authentication JWT](https://start.ktor.io/p/auth-jwt)                 | Handles JSON Web Token (JWT) bearer authentication scheme                          |
-| [CORS](https://start.ktor.io/p/cors)                                   | Enables Cross-Origin Resource Sharing (CORS)                                       |
+# <a id="features">Features</a>
 
-## Building & Running
+### You can host this application so that you and your friends can see and participate in flights
+### Admin Panel to create, edit and cancel flights
+### Flight history
+### Boarding Pass generator
+### Simbrief Integration
+### Easy to modify images and labels
 
-To build or run the project, use one of the following tasks:
+# <a id="download">How to download</a>
 
-| Task                                    | Description                                                          |
-| -----------------------------------------|---------------------------------------------------------------------- |
-| `./gradlew test`                        | Run the tests                                                        |
-| `./gradlew build`                       | Build everything                                                     |
-| `./gradlew buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
-| `./gradlew buildImage`                  | Build the docker image to use with the fat JAR                       |
-| `./gradlew publishImageToLocalRegistry` | Publish the docker image locally                                     |
-| `./gradlew run`                         | Run the server                                                       |
-| `./gradlew runDocker`                   | Run using the local docker image                                     |
+# <a id="concerns">Concerns !!PLEASE READ!!</a>
 
-If the server starts successfully, you'll see the following output:
+I would like to address some concerns regarding the security of this application. As a developer,
+I recognize that I do not have a formal background or deep expertise in cybersecurity. Because of this,
+I am aware that there may be vulnerabilities or gaps in the current implementation that I am not fully equipped
+to identify or mitigate at this stage.
 
-```
-2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
-2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
-```
+That said, I am committed to continuous improvement and have strong intentions to evolve this project into a more
+secure and reliable tool over time. Security is not being ignored—it is simply an area that will require further study,
+external input, and iterative development to reach a higher standard.
 
+It is also important to emphasize that any cloud-based application inherently carries additional security considerations.
+Hosting systems in the cloud increases exposure and can introduce potential vulnerabilities if not properly managed. For this reason,
+security should always be treated as a critical aspect of development, especially when deploying applications in cloud environments.
+
+Although it is completely safe to run locally and only stream your screen to your friends and/or using the boarding pass generator
