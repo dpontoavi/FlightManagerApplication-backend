@@ -14,7 +14,7 @@ for taking your airline simulation to a next level
 
 ## Story behind this project
 
-I started this project as an aid to my studies session using flight simulation as timer, I was surprised on how
+I started this project as an aid to my studies sessions using flight simulation as timer, I was surprised on how
 flying would help me study, even when I'm at the cockpit actively flying the plane.</p>
 So, in my free time I worked on a system that could let me plan my sessions just like a real airline plans flights.
 I soon noticed that this could be more than just a study gimmick, that's why we are here now, feel free to use as you like.
@@ -22,6 +22,7 @@ I soon noticed that this could be more than just a study gimmick, that's why we 
 # <a id="features">Features</a>
 
 ### You can host this application so that you and your friends can see and participate in flights
+^^^ Please read the Concerns section to further disclaimers on this
 ### Admin Panel to create, edit and cancel flights
 ### Flight history
 ### Boarding Pass generator
@@ -45,4 +46,35 @@ It is also important to emphasize that any cloud-based application inherently ca
 Hosting systems in the cloud increases exposure and can introduce potential vulnerabilities if not properly managed. For this reason,
 security should always be treated as a critical aspect of development, especially when deploying applications in cloud environments.
 
-Although it is completely safe to run locally and only stream your screen to your friends and/or using the boarding pass generator
+Although it is completely safe to run locally and using video call app (ie. Discord) to stream your screen to your friends and/or using the boarding pass generator
+
+{
+"flightNumber": "LA1234",
+"origin": {
+"IATA": "FOR",
+"ICAO": "SBFZ",
+"NAME": "Pinto Martins",
+"CITY": "Fortaleza"
+},
+"destination": {
+"IATA": "BSB",
+"ICAO": "SBBR",
+"NAME": "Juscelino Kubitzchek",
+"CITY": "Brasilia"
+},
+"aircraft": {
+"model": "A320",
+"regNumber": "PR-AVI",
+"airline": "LATAM Airlines",
+"manufacturer": "AIRBUS"
+},
+"passenger": "Carolina Olv",
+"terminal": "1",
+"gate": "14",
+"group": 2,
+"seat": "12A",
+"flightDepart": "17:00",
+"flightArr": "19:40",
+"date": "2026-04-15",
+"status": "SCHEDULED"
+}

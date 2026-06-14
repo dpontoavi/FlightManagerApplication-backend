@@ -7,7 +7,6 @@ data class Aircraft(
     val model: String,
     val regNumber: String,
     val airline: String,
-    val manufacturer: Manufacturer,
-    val paxCapacity: Int
+    val manufacturer: Manufacturer
     )
 

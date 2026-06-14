@@ -1,5 +1,6 @@
 package com.dpontoavi.app
 
+import app.routes.configureAuth
 import com.dpontoavi.app.database.configureDatabases
 import com.dpontoavi.app.plugins.configureHTTP
 import com.dpontoavi.app.plugins.configureMonitoring
@@ -20,4 +21,5 @@ fun Application.module() {
     configureSecurity()
     configureHTTP()
     configureRouting()
+    configureAuth()
 }

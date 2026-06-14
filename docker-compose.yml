@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: flightstudy-db
+    environment:
+      POSTGRES_DB: flightstudy
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - flightstudy_data:/var/lib/postgresql/data
+
+volumes:
+  flightstudy_data:

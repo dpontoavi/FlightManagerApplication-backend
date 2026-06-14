@@ -3,22 +3,18 @@ package app.models
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Flights(
+data class BoardingPass(
     val id: Int = 0,
-    val origin: Airports,
-    val destination: Airports,
+    val flightId: Int,
     val flightNumber: String,
-    val aircraft: Aircraft,
-    val date: String,
-    val flightDepart: String,
-    val flightArr: String,
+    val passenger: String,
+    val seat: String,
     val terminal: String,
     val gate: String,
     val group: Int,
-    val seat: String,
-    val passenger: String,
+    val date: String,
+    val flightDepart: String,
+    val flightArrival: String,
     val status: flightStatus = flightStatus.SCHEDULED
 
-
 )
-
