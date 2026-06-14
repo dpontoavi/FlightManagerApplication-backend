@@ -136,10 +136,10 @@ Tokens expire after **1 hour**.
 
 # <a id="customs">How to make your customizations</a>
 
-| Prerequisites |
-|---------------|
-|Understanding of Kotlin Proggraming Language |
-|Understanding of the Ktor framework |
+| Prerequisites                                |
+|----------------------------------------------|
+| Understanding of Kotlin Programming Language |
+| Understanding of the Ktor framework          |
 
 Assuming you already have these prerequisites, you can modify/add any feature of the source code
 
