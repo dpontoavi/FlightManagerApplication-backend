@@ -47,34 +47,3 @@ Hosting systems in the cloud increases exposure and can introduce potential vuln
 security should always be treated as a critical aspect of development, especially when deploying applications in cloud environments.
 
 Although it is completely safe to run locally and using video call app (ie. Discord) to stream your screen to your friends and/or using the boarding pass generator
-
-{
-"flightNumber": "LA1234",
-"origin": {
-"IATA": "FOR",
-"ICAO": "SBFZ",
-"NAME": "Pinto Martins",
-"CITY": "Fortaleza"
-},
-"destination": {
-"IATA": "BSB",
-"ICAO": "SBBR",
-"NAME": "Juscelino Kubitzchek",
-"CITY": "Brasilia"
-},
-"aircraft": {
-"model": "A320",
-"regNumber": "PR-AVI",
-"airline": "LATAM Airlines",
-"manufacturer": "AIRBUS"
-},
-"passenger": "Carolina Olv",
-"terminal": "1",
-"gate": "14",
-"group": 2,
-"seat": "12A",
-"flightDepart": "17:00",
-"flightArr": "19:40",
-"date": "2026-04-15",
-"status": "SCHEDULED"
-}
