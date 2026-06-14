@@ -1,6 +1,6 @@
-# Flight Management Web Application using Kotlin Backend and React
+# Airline Manager Application using Kotlin Backend
 
-If you are a Flight Sim player and need a step more to realism here is Flight Management Web Application: A solution
+If you are a Flight Sim player and need a step more to realism here is Airline Manager Application: A solution
 for taking your airline simulation to a next level
 
 ### Sumary
