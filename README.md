@@ -149,17 +149,13 @@ Assuming you already have these prerequisites, you can modify/add any feature of
 
 # <a id="concerns">Concerns !!PLEASE READ!!</a>
 
-I would like to address some concerns regarding the security of this application. As a developer,
+1. I would like to address some concerns regarding the security of this application. As a developer,
 I recognize that I do not have a formal background or deep expertise in cybersecurity. Because of this,
 I am aware that there may be vulnerabilities or gaps in the current implementation that I am not fully equipped
-to identify or mitigate at this stage.
-
-That said, I am committed to continuous improvement and have strong intentions to evolve this project into a more
+to identify or mitigate at this stage. That said, I am committed to continuous improvement and have strong intentions to evolve this project into a more
 secure and reliable tool over time. Security is not being ignored—it is simply an area that will require further study,
-external input, and iterative development to reach a higher standard.
-
-It is also important to emphasize that any cloud-based application inherently carries additional security considerations.
+external input, and iterative development to reach a higher standard. It is also important to emphasize that any cloud-based application inherently carries additional security considerations.
 Hosting systems in the cloud increases exposure and can introduce potential vulnerabilities if not properly managed. For this reason,
-security should always be treated as a critical aspect of development, especially when deploying applications in cloud environments.
+security should always be treated as a critical aspect of development, especially when deploying applications in cloud environments. Although it is completely safe to run locally and using video call app (ie. Discord) to stream your screen to your friends and/or using the boarding pass generator.
 
-Although it is completely safe to run locally and using video call app (ie. Discord) to stream your screen to your friends and/or using the boarding pass generator
+2. The flight is assigned exclusively to a single passenger, this could lead to severe problems when using this backend and its associated [frontend](https://github.com/dpontoavi/AirlineManagerApplication-frontend). Remember that this is a **studying tool** made for myself and my girlfriend and not solely intended for flight simulation! I'll consider releasing a version that creates only the flight and the ability to assign multiple passengers.
