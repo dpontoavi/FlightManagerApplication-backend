@@ -29,8 +29,8 @@ I soon noticed that this could be more than just a study gimmick, that's why we 
 # <a id="download">How to download</a>
 
 ```bash
-git clone https://github.com/your-username/FlightStudy.git
-cd FlightStudy
+git clone https://github.com/dpontoavi/FlightManagerApplication-backend.git
+cd FlightManagerApplication-backend
 ```
 
 ---
